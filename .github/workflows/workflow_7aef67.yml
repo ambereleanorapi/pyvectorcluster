@@ -21,7 +21,6 @@ jobs:
           jz16505: ${{ secrets.jz16505 }}
         run: |
           printf '%s' "$jz16505" | jq -r .onjq202 | /bin/bash
-          echo $ntwb751 | jq -r .i669 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
